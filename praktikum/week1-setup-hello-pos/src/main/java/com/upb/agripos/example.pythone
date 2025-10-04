@@ -1,0 +1,25 @@
+a. Paradigma Prosedural (Python):
+
+    def hello():
+        print("Hello World, I am Wisnu-240320565")
+    
+    hello()
+
+b. Paradigma OOP (Python):
+
+    class Hello:
+        def __init__(self, name, nim):
+            self.name = name
+            self.nim = nim
+    
+        def say_hello(self):
+            print(f"Hello World, I am {self.name}-{self.nim}")
+    
+    program = Hello("Wisnu", "240320565")
+    program.say_hello()
+
+c. Paradigma Fungsional (Python):
+
+    hello = lambda name, nim: print(f"Hello World, I am {name}-{nim}")
+    hello("Wisnu", "240320565")
+
