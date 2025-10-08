@@ -61,8 +61,10 @@ Topik: Hello POS
    - Tuliskan bagian: Tujuan Praktikum, Dasar Teori, Langkah-Langkah Praktikum, Hasil & Pembahasan (sertakan tangkapan layar output, Kesimpulan
 
 ## Kode Program
+
 **HelloProcedural.java**
-// HelloProcedural.java
+
+_// HelloProcedural.java_
 public class HelloProcedural {
     public static void main(String[] args) {
         String nim = "240202908";
@@ -83,7 +85,8 @@ public class HelloProcedural {
 }
 
 **HelloFunctional.java**
-// HelloFunctional.java
+
+_// HelloFunctional.java_
 import java.util.*;
 import java.util.stream.*;
 
@@ -107,7 +110,8 @@ public class HelloFunctional {
 }
 
 **HelloOOP.java**
-// HelloOOP.java
+
+_// HelloOOP.java_
 class Produk {
     String nama;
     int harga;
