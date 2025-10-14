@@ -1,5 +1,4 @@
 # Laporan Praktikum Minggu 1
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 Topik: "Paradigma dan Setup Proyek"
 
 ## Identitas
