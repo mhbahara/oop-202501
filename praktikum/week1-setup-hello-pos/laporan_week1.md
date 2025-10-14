@@ -71,16 +71,16 @@ Commit dengan pesan: week1-setup-hello-pos.
             .forEach(i -> System.out.println("- " + produk.get(i) + ": " + harga.get(i)));
         int total = harga.stream().mapToInt(Integer::intValue).sum();
         System.out.println("Total harga semua produk: " + total);
-
+```
 ---
 
 ## Hasil Eksekusi
-(
-![Screenshot hasilProcedural](screenshots/SS-HelloProcedural.png)
+(Sertakan screenshot hasil eksekusi program.  
+![Screenshot hasil HelloFunctional](\praktikum\week1-setup-hello-pos\screenshots\SS-HelloFunctional.png)
 
-![Screenshot hasilOOP](screenshots/SS-HelloOOP.png)
+![Screenshot hasil HelloFunctional](\praktikum\week1-setup-hello-pos\screenshots\SS-HelloOOP.png)
 
-![Screenshot hasilFunctional](screenshots/SS-HelloFunctional.png)
+![Screenshot hasil HelloFunctional](\praktikum\week1-setup-hello-pos\screenshots\SS-HelloOOP.png)
 )
 ---
 
@@ -107,25 +107,25 @@ Dengan memahami dasar pemrograman prosedural, fungsional, dan OOP, dapat disimpu
 ## Quiz
 1. Apakah OOP selalu lebih baik dari prosedural? 
 
-**Jawaban:** 
+    **Jawaban:** 
 Pendekatan OOP tidak selalu lebih baik dari prosedural, karena keduanya memiliki keunggulan masing-masing. OOP lebih sesuai untuk program yang kompleks dan membutuhkan struktur yang terorganisir, sedangkan pendekatan prosedural lebih efektif digunakan pada program yang sederhana dan memiliki alur kerja yang langsung. Pemilihan pendekatan tergantung pada tujuan dan tingkat kompleksitas program yang dibuat.
 
 2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?
 
-**Jawaban:**
+    **Jawaban:**
 Functional programming lebih cocok digunakan ketika program berfokus pada pengolahan data yang bersifat berulang, kompleks, atau memerlukan transformasi data secara efisien. Pendekatan ini sangat sesuai untuk kasus seperti analisis data, pemrosesan koleksi (list, array), dan operasi matematis, karena dapat menulis kode yang lebih singkat, mudah diuji, serta meminimalkan kesalahan akibat perubahan data (mutasi). Jadi, functional programming lebih unggul ketika dibutuhkan kode yang ringkas, bersifat deklaratif, dan berorientasi pada hasil, bukan pada langkah-langkah proses seperti pada OOP atau prosedural.
 
 3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi? 
 
-**Jawaban:**
+    **Jawaban:**
 Paradigma pemrograman sangat memengaruhi maintainability (kemudahan pemeliharaan) dan scalability (kemampuan aplikasi untuk dikembangkan). Pada paradigma prosedural, program biasanya lebih sederhana tetapi sulit dipelihara saat ukurannya membesar karena logika bercampur dalam satu alur. Paradigma OOP meningkatkan maintainability dan scalability karena kode dibagi menjadi class dan object, sehingga lebih mudah dikelola, diuji, serta dikembangkan tanpa mengubah keseluruhan program. Sementara itu, paradigma fungsional mendukung maintainability dengan cara meminimalkan efek samping dan membuat fungsi bersifat mandiri, sehingga mudah diuji dan diperluas. Dengan demikian, semakin baik struktur paradigma yang digunakan, semakin mudah aplikasi untuk dirawat dan dikembangkan di masa depan.
 
 4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
 
-**Jawaban:**
+    **Jawaban:**
 OOP lebih cocok untuk mengembangkan aplikasi POS (Point of Sale) karena pendekatan ini memungkinkan program dibangun dari objek-objek yang mewakili entitas nyata, seperti Produk, Pelanggan, Transaksi, dan Kasir. Dengan OOP, setiap objek memiliki data dan perilaku sendiri, sehingga kode menjadi lebih terstruktur, mudah diubah, dan dapat digunakan kembali. Selain itu, OOP memudahkan pengembang menambahkan fitur baru—seperti laporan penjualan atau diskon—tanpa harus mengubah seluruh program. Sementara pada pendekatan prosedural, logika program cenderung bercampur, sehingga sulit dikelola jika aplikasi menjadi besar dan kompleks.
 
 5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?
 
-**Jawaban:**
+    **Jawaban:**
 Paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code) karena berfokus pada penggunaan fungsi-fungsi murni dan operasi deklaratif untuk memproses data. Dalam pemrograman fungsional, banyak tugas yang biasanya membutuhkan perulangan manual dapat digantikan dengan fungsi bawaan seperti map(), filter(), dan reduce(). Dengan begitu, programmer tidak perlu menulis kode berulang seperti inisialisasi variabel, perulangan, atau kondisi yang sama berkali-kali. Selain itu, fungsi dalam paradigma fungsional dapat digunakan kembali tanpa tergantung pada keadaan (state) tertentu, sehingga program menjadi lebih ringkas, mudah dibaca, dan lebih konsisten.
