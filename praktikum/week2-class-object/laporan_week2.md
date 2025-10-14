@@ -51,42 +51,93 @@ Dalam konteks Agri-POS, produk pertanian seperti benih, pupuk, dan alat pertania
 ---
 
 ## Kode Program
-(Tuliskan kode utama yang dibuat, contoh:  
-
 ```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
+// produk
+public class Produk {
+    private String kode;
+    private String nama;
+    private double harga;
+    private int stok;
+
+    public Produk(String kode, String nama, double harga, int stok) {
+        this.kode = kode;
+        this.nama = nama;
+        this.harga = harga;
+        this.stok = stok;
+    }
 ```
-)
+```java
+// credit By
+public static void print(String nama, String nim) {
+        System.out.println("\ncredit by: " + nama + " - " + nim);
+    }
+```
+```java
+// main produk
+p1.kurangiStok(25);
+        p2.kurangiStok(5);
+        p3.tambahStok(10);
+
+        System.out.println("\n=== Setelah Update Stok ===");
+        System.out.println("Kode: " + p1.getKode() + ", Nama: " + p1.getNama() + ", Harga: " + p1.getHarga() + ", Stok: " + p1.getStok());
+        System.out.println("Kode: " + p2.getKode() + ", Nama: " + p2.getNama() + ", Harga: " + p2.getHarga() + ", Stok: " + p2.getStok());
+        System.out.println("Kode: " + p3.getKode() + ", Nama: " + p3.getNama() + ", Harga: " + p3.getHarga() + ", Stok: " + p3.getStok());
+```
+
 ---
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil eksekusi week2](\praktikum\week2-class-object\screenshots\week2OOP.png)
+![Screenshot hasil eksekusi week2](screenshots\week2OOP.png)
 )
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+**1. Jelaskan bagaimana kode berjalan.**
+
+Program ini dibuat untuk menampilkan data produk pertanian menggunakan pendekatan berorientasi objek (OOP).
+Pertama, program mengimpor dua class lain yaitu Produk dari folder model dan CreditBy dari folder util.
+Class Produk berisi data dan fungsi yang menggambarkan satu produk pertanian, seperti kode, nama, harga, dan stok.
+Sementara CreditBy digunakan untuk menampilkan identitas pembuat program (nama dan NIM).
+Di dalam method main, program membuat tiga objek produk dengan cara memanggil konstruktor new Produk(...).
+Masing-masing produk punya informasi yang berbeda — misalnya Benih Padi IR64, Pupuk Urea 50kg, dan Cangkul Baja.
+Setelah itu, program menampilkan semua data produk ke layar menggunakan System.out.println.
+Selanjutnya, program melakukan perubahan stok:
+p1.kurangiStok(25) → mengurangi stok produk pertama sebanyak 25,
+p2.kurangiStok(5) → mengurangi stok produk kedua sebanyak 5,
+p3.tambahStok(10) → menambah stok produk ketiga sebanyak 10.
+Kemudian program mencetak ulang data produk setelah stok diperbarui agar terlihat perbedaannya.
+Terakhir, method CreditBy.print("Bunga Maura Aulya", "240320562") dipanggil untuk menampilkan identitas pembuat program sebagai penutup output.
+
+**2. Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.**
+
+Jadi, perbedaan minggu ini dengan minggu sebelumnya itu cukup jelas, minggu lalu masih belajar pengenalan tiga paradigma pemrograman yaitu prosedural, fungsional, dan OOP. Melalui contoh sederhana seperti program “Hello World” dan daftar produk. Tujuannya untuk membrikan pemahaman perbedaan gaya penulisan antar paradigma. Nah, di minggu ini lanjut ke penerapan OOP yang sesungguhnya.
+Sudah mulai membuat class terpisah, seperti Produk dan CreditBy, lalu bikin object dari class itu di program utama (MainProduk). Selain itu, juga belajar pakai konstruktor, getter-setter, dan method seperti tambahStok() dan kurangiStok() untuk mengubah data produk. Jadi, kalau minggu lalu OOP-nya masih sekadar teori dan contoh kecil, minggu ini udah benar-benar mempraktikkan OOP untuk mengelola data nyata. Programnya jadi lebih rapi, mudah diatur, dan kelihatan bagaimana konsep “objek” bekerja di dunia nyata.
+
+**3. Kendala yang dihadapi dan cara mengatasinya.**
+
+Saat mengerjakan program minggu ini, saya sempat mengalami kendala karena kesalahan pada penulisan dan penempatan package. Program tidak bisa dijalankan karena Java tidak menemukan class yang sesuai dengan lokasi package yang dideklarasikan. Misalnya, file CreditBy.java sudah ditulis dengan package util;, tetapi ternyata file tersebut tidak berada di folder util sesuai strukturnya. Akibatnya muncul error saat program dijalankan. Untuk mengatasinya, saya memastikan setiap file berada di folder yang sesuai dengan deklarasi package-nya, seperti file Produk.java di folder model dan CreditBy.java di folder util. Selain itu, program juga dijalankan dari root folder project agar Java dapat membaca semua package dengan benar. Setelah memperbaiki hal itu, program akhirnya dapat dijalankan dengan lancar tanpa error.
+
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+(Tuliskan kesimpulan dari praktikum minggu ini. 
+
+Dengan menggunakan class dan object pada praktikum minggu ini, program menjadi lebih terstruktur, mudah dipahami, dan efisien dalam pengelolaan data. Setiap objek memiliki atribut dan perilaku sendiri, sehingga perubahan pada satu bagian tidak memengaruhi bagian lainnya. Selain itu, konsep OOP ini membuat program lebih fleksibel dan mudah dikembangkan untuk kebutuhan yang lebih kompleks di masa mendatang.
+
+)
 
 ---
 
 ## Quiz
 1. Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?
-**Jawaban:**
+    
+    **Jawaban:** Atribut sebaiknya dideklarasikan sebagai private dalam class karena tujuannya untuk melindungi data (data enkapsulasi). Dengan menjadikannya private, atribut hanya bisa diakses dan diubah melalui method khusus (getter dan setter). Hal ini mencegah kode lain secara langsung mengubah data tanpa kendali, yang bisa menyebabkan kesalahan atau inkonsistensi data. Selain itu, cara ini membuat program lebih aman, rapi, dan mudah dipelihara, karena pengembang bisa mengatur bagaimana data diakses dan dimodifikasi tanpa harus mengubah bagian lain dari program.
 
 2. Apa fungsi getter dan setter dalam enkapsulasi?
-**Jawaban:**
+
+    **Jawaban:** Fungsi getter dan setter dalam enkapsulasi adalah untuk mengatur akses ke atribut yang bersifat private di dalam class. Getter berfungsi untuk mengambil atau menampilkan nilai dari atribut private. Setter berfungsi untuk mengubah atau menetapkan nilai baru pada atribut tersebut. Dengan cara ini, data di dalam class tetap terlindungi, tapi masih bisa diakses dan diubah secara terkendali. Jadi, getter dan setter membantu menjaga keamanan data sambil tetap memberikan fleksibilitas dalam penggunaannya.
 
 3. Bagaimana cara class Produk mendukung pengembangan aplikasi POS yang lebih kompleks?
-**Jawaban:**
+
+    **Jawaban:** Class Produk bisa mendukung pengembangan aplikasi POS (Point of Sale) yang lebih kompleks karena menjadi pondasi utama untuk mengelola data produk di dalam sistem.Dengan class ini, setiap produk memiliki atribut dan perilaku sendiri, seperti kode, nama, harga, dan stok, serta method untuk menambah atau mengurangi stok. Hal ini membuat pengelolaan data menjadi lebih terstruktur dan mudah dikembangkan Misalnya, nanti saat aplikasi POS dikembangkan lebih lanjut, class Produk bisa dengan mudah diperluas untuk menambahkan fitur seperti kategori produk, diskon, pajak, atau integrasi dengan database dan transaksi penjualan. Jadi, class ini membantu sistem POS menjadi modular, mudah dirawat, dan siap dikembangkan lebih lanjut tanpa harus mengubah struktur dasar program.

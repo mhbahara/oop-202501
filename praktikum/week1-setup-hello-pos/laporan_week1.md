@@ -76,11 +76,11 @@ Commit dengan pesan: week1-setup-hello-pos.
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil HelloFunctional](\praktikum\week1-setup-hello-pos\screenshots\SS-HelloFunctional.png)
+![Screenshot hasil HelloFunctional](screenshots\SS-HelloFunctional.png)
 
-![Screenshot hasil HelloFunctional](\praktikum\week1-setup-hello-pos\screenshots\SS-HelloOOP.png)
+![Screenshot hasil HelloFunctional](screenshots\SS-HelloOOP.png)
 
-![Screenshot hasil HelloFunctional](\praktikum\week1-setup-hello-pos\screenshots\SS-HelloOOP.png)
+![Screenshot hasil HelloFunctional](screenshots\SS-HelloOOP.png)
 )
 ---
 
