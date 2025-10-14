@@ -76,14 +76,11 @@ Commit dengan pesan: week1-setup-hello-pos.
 
 ## Hasil Eksekusi
 (
-[Screenshot hasil Procedural]
-(!(screenshots/SS-HelloProcedural.png))
+![Screenshot hasilProcedural](screenshots/SS-HelloProcedural.png)
 
-[Screenshot hasil OOP]
-(!(screenshots/SS-HelloOOP.png))
+![Screenshot hasilOOP](screenshots/SS-HelloOOP.png)
 
-[Screenshot hasil Functional]
-(!(screenshots/SS-HelloFunctional.png))
+![Screenshot hasilFunctional](screenshots/SS-HelloFunctional.png)
 )
 ---
 
