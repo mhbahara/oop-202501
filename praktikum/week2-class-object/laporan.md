@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Laporan Praktikum Minggu 2
 Topik: "Class dan Object"
 
@@ -6,20 +6,11 @@ Topik: "Class dan Object"
 - Nama  : Rafi Kurniawan
 - NIM   : 240202878
 - Kelas : 3IKRB
-=======
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
-
-## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 
 ---
 
 ## Tujuan
-<<<<<<< HEAD
+
 - Memahami konsep dasar OOP (class, objek, atribut, method).
 
 - Dapat membuat program yang modular dan terstruktur dengan package.
@@ -27,15 +18,11 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 - Mampu menerapkan enkapsulasi dan manipulasi data objek secara aman.
 
 - Terbiasa dengan coding convention dan struktur proyek Java profesional.
-=======
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
+
 
 ---
 
 ## Dasar Teori
-<<<<<<< HEAD
 1. Class dan Object
 Class adalah cetakan (blueprint) untuk membuat objek. Objek merupakan instance dari class yang memiliki atribut (data) dan method (perilaku).
 
@@ -50,18 +37,11 @@ Proses pembuatan objek dari class menggunakan kata kunci new. Melalui instansias
 
 5. Package dalam Java
 Package digunakan untuk mengelompokkan class berdasarkan fungsinya agar struktur program lebih rapi, modular, dan mudah dikelola (misalnya: model, util, main).
-=======
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 
 ---
 
 ## Langkah Praktikum
-<<<<<<< HEAD
+
 - Membuat Struktur Folder Proyek
 
 - Membuat Class Produk (package model)
@@ -71,17 +51,10 @@ Contoh:
 - Membuat Class MainProduk (package main)
 
 - Menjalankan Program
-=======
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 
 ---
 
 ## Kode Program
-<<<<<<< HEAD
 ```java
 // Produk
 package com.upb.agripos.model;
@@ -214,41 +187,12 @@ Alur ini menunjukkan bagaimana objek saling berinteraksi dalam satu sistem.
 Praktikum ini berhasil menerapkan konsep Pemrograman Berorientasi Objek (OOP) dengan membuat dan menggunakan class Produk, CreditBy, serta MainProduk.
 Penerapan enkapsulasi membuat data lebih aman dan terkontrol melalui penggunaan getter dan setter.
 Struktur program menjadi lebih modular dan terorganisasi dengan pembagian package (model, util, main).
-Penggunaan method seperti tambahStok() dan kurangiStok() membuktikan bagaimana perilaku objek dapat diatur melalui fungsi dalam class
-=======
-(Tuliskan kode utama yang dibuat, contoh:  
-
-```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
-```
-)
----
-
-## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
----
-
-## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
----
-
-## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
+Penggunaan method seperti tambahStok() dan kurangiStok() membuktikan bagaimana perilaku objek dapat diatur melalui fungsi dalam class.
 
 ---
 
 ## Quiz
-<<<<<<< HEAD
+
 1. Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?  
    **Jawaban:** …  
    Atribut sebaiknya dibuat private karena alasan enkapsulasi (encapsulation), yaitu prinsip utama dalam Object-Oriented Programming (OOP) yang bertujuan untuk melindungi data.
@@ -266,13 +210,3 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 3. Bagaimana cara class Produk mendukung pengembangan aplikasi POS yang lebih kompleks? 
    **Jawaban:** …  
    Class Produk mendukung pengembangan aplikasi POS yang lebih kompleks karena menyediakan struktur data yang rapi, aman, mudah dikembangkan, dan bisa diintegrasikan dengan komponen lain dalam sistem.
-=======
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
-
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
-
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
