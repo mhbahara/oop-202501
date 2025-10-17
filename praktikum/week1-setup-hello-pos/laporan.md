@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-=======
 # Laporan Praktikum Minggu 1
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 Topik: "Paradigma dan Setup Proyek"
 
 ## Identitas
@@ -17,12 +13,7 @@ Topik: "Paradigma dan Setup Proyek"
 
 ---
 
-<<<<<<< HEAD
-## Dasar Teori
-  
-=======
 ## Dasar Teori  
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 1. Paradigma Pemrograman Paradigma pemrograman adalah cara berpikir atau pendekatan dalam menulis program komputer. Tiga paradigma utama yang dipelajari di praktikum ini adalah prosedural, berorientasi objek (OOP), dan fungsional. Masing-masing memiliki struktur dan logika kerja yang berbeda.
 2. Paradigma Prosedural Paradigma ini berfokus pada urutan langkah-langkah atau prosedur (fungsi) untuk menyelesaikan suatu tugas. Program disusun dari perintah-perintah yang dijalankan secara berurutan dari atas ke bawah.
 3. Paradigma Berorientasi Objek (OOP) OOP berfokus pada objek yang merepresentasikan entitas dunia nyata. Setiap objek memiliki atribut (data) dan metode (perilaku). Konsep utamanya meliputi kelas, objek, enkapsulasi, pewarisan, dan polimorfisme.
@@ -32,10 +23,6 @@ Topik: "Paradigma dan Setup Proyek"
 ---
 
 ## Langkah Praktikum
-<<<<<<< HEAD
-
-=======
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 1. Menyiapkan lingkungan pemrograman (setup environment).
 2. Membuat struktur folder proyek.
 3. Membuat tiga program dengan paradigma berbeda.
@@ -43,8 +30,6 @@ Topik: "Paradigma dan Setup Proyek"
 5. Mengambil dan menyimpan hasil eksekusi.
 6. Menyusun laporan praktikum.
 
-<<<<<<< HEAD
-
 ---
 
 ## Kode Program
@@ -55,63 +40,40 @@ Topik: "Paradigma dan Setup Proyek"
 
 ## Kode Program
 ```Java
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
+
 // Prosedural
 public class Prosedural {
     public static void main(String[] args) {
         greet();
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
     public static void greet() {
         System.out.println("Hello World, I am Rafi Kurniawan - 240202878");
     }
 }
-<<<<<<< HEAD
-```java
-=======
 
 ```Java
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 // OOP
 class HelloOOP {
     private String name;
     private String nim;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
     public HelloOOP(String name, String nim) {
         this.name = name;
         this.nim = nim;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
     public void greet() {
         System.out.println("Hello World, I am " + name + "-" + nim);
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 public class OOP {
     public static void main(String[] args) {
         HelloOOP student = new HelloOOP("Rafi Kurniawan", "240202878");
         student.greet();
     }
 }
-<<<<<<< HEAD
-```java
-=======
 
 ```Java
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 // Functional
 public class Functional {
     public static void main(String[] args) {
@@ -120,22 +82,11 @@ public class Functional {
         greet.run();
     }
 }
-<<<<<<< HEAD
----
-
-## Hasil Eksekusi
-// Prosedural
-// OOP
-// Functional
-=======
 
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
+
 ---
 
 ## Analisis
@@ -149,10 +100,6 @@ public class Functional {
 ## Kesimpulan
 Praktikum ini membantu memahami perbedaan antara tiga paradigma pemrograman — yaitu prosedural, berorientasi objek (OOP), dan fungsional.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
 ---
 
 ## Quiz
@@ -197,8 +144,4 @@ Praktikum ini membantu memahami perbedaan antara tiga paradigma pemrograman — 
 
 5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?
    **Jawaban:** …  
-<<<<<<< HEAD
    Paradigma fungsional mengurangi kode berulang karena berfokus pada penggunaan fungsi murni, komposisi fungsi, dan ekspresi deklaratif untuk menggantikan pola kode yang berulang.
-=======
-   Paradigma fungsional mengurangi kode berulang karena berfokus pada penggunaan fungsi murni, komposisi fungsi, dan ekspresi deklaratif untuk menggantikan pola kode yang berulang.
->>>>>>> d2459bdce8503a204fdcba59bd9db0d538547b38
