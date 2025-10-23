@@ -1,0 +1,139 @@
+# Laporan Praktikum Minggu 2 
+Topik: "Class dan Object"
+
+## Identitas
+- Nama  : Inayah Fijanatin
+- NIM   : 240202908
+- Kelas : 3IKKA
+
+---
+
+## Tujuan
+- Mahasiswa memahami konsep class dan object dalam pemrograman berorientasi objek (OOP).
+- Mahasiswa mampu menerapkan enkapsulasi menggunakan access modifier dan getter/setter.
+- Mahasiswa dapat mengimplementasikan class Produk pertanian dan menampilkan data prod di console.
+
+---
+
+## Dasar Teori
+1. Class adalah blueprint atau cetak biru dari objek yang mendefinisikan atribut dan perilaku.
+2. Object adalah instansiasi dari class, yaitu bentuk nyata dari blueprint yang digunakan dalam program.
+3. Enkapsulasi melindungi data agar tidak dapat diakses langsung dari luar class dengan menggunakan access modifier private.
+4. Getter dan Setter digunakan untuk mengakses dan mengubah nilai atribut private dengan aman.
+5. Konsep modularisasi dalam OOP membantu kode menjadi lebih terstruktur, mudah dibaca, dan mudah dikembangkan.
+
+## Langkah Praktikum
+1. Membuat package dan file:
+	- com.upb.agripos.model.Produk.java
+	- com.upb.agripos.util.CreditBy.java
+	- com.upb.agripos.MainProduk.java
+2. Mengisi class Produk dengan atribut: kode, nama, harga, dan stok, serta membuat getter dan setter.
+3. Membuat class CreditBy untuk menampilkan identitas mahasiswa.
+4.Membuat class MainProduk untuk menampilkan data produk pertanian di console.
+5. Melakukan kompilasi dan menjalankan program dengan perintah:
+
+## Kode Program
+
+Produk.java
+
+package com.upb.agripos.model;
+
+public class Produk {
+    private String kode;
+    private String nama;
+    private double harga;
+    private int stok;
+
+    public Produk(String kode, String nama, double harga, int stok) {
+        this.kode = kode;
+        this.nama = nama;
+        this.harga = harga;
+        this.stok = stok;
+    }
+
+    public String getKode() { return kode; }
+    public void setKode(String kode) { this.kode = kode; }
+
+    public String getNama() { return nama; }
+    public void setNama(String nama) { this.nama = nama; }
+
+    public double getHarga() { return harga; }
+    public void setHarga(double harga) { this.harga = harga; }
+
+    public int getStok() { return stok; }
+    public void setStok(int stok) { this.stok = stok; }
+
+    public void tambahStok(int jumlah) { this.stok += jumlah; }
+
+    public void kurangiStok(int jumlah) {
+        if (this.stok >= jumlah) {
+            this.stok -= jumlah;
+        } else {
+            System.out.println("Stok tidak mencukupi!");
+        }
+    }
+}
+
+
+Creditby,java
+
+package com.upb.agripos.util;
+
+public class CreditBy {
+    public static void print(String nim, String nama) {
+        System.out.println("\ncredit by: " + nim + " - " + nama);
+    }
+}
+
+MainProduk.java
+
+package com.upb.agripos;
+
+import com.upb.agripos.model.Produk;
+import com.upb.agripos.util.CreditBy;
+
+public class MainProduk {
+    public static void main(String[] args) {
+        Produk p1 = new Produk("BNH-001", "Benih Padi IR64", 25000, 100);
+        Produk p2 = new Produk("PPK-101", "Pupuk Urea 50kg", 350000, 40);
+        Produk p3 = new Produk("ALT-501", "Cangkul Baja", 90000, 15);
+
+        System.out.println("Kode: " + p1.getKode() + ", Nama: " + p1.getNama() + ", Harga: " + p1.getHarga() + ", Stok: " + p1.getStok());
+        System.out.println("Kode: " + p2.getKode() + ", Nama: " + p2.getNama() + ", Harga: " + p2.getHarga() + ", Stok: " + p2.getStok());
+        System.out.println("Kode: " + p3.getKode() + ", Nama: " + p3.getNama() + ", Harga: " + p3.getHarga() + ", Stok: " + p3.getStok());
+
+        CreditBy.print("240202908", "Inayah Fijanatin");
+    }
+}
+
+## Hasil Eksekusi
+
+Kode: BNH-001, Nama: Benih Padi IR64, Harga: 25000.0, Stok: 100
+Kode: PPK-101, Nama: Pupuk Urea 50kg, Harga: 350000.0, Stok: 40
+Kode: ALT-501, Nama: Cangkul Baja, Harga: 90000.0, Stok: 15
+
+credit by: 240202908 - Inayah Fijanatin
+
+## Analisis
+Kode dijalankan dengan membuat tiga objek dari class Produk.
+Masing-masing objek menyimpan nilai atribut yang berbeda, kemudian ditampilkan menggunakan getter.
+Konsep enkapsulasi diterapkan dengan menjadikan atribut private dan menyediakan getter dan setter.
+Class CreditBy digunakan untuk menampilkan identitas mahasiswa secara terpisah agar program lebih modular.
+Beberapa Kali nyoba belajar sendiri dan beberapa kali mencoba masih banyak errornya selama kompilasi dan eksekusi, ternyata memang perlu memastikan struktur package sesuai agar import berjalan lancar.
+
+## Kesimpulan
+Dengan menggunakan class dan object, program menjadi lebih terstruktur, modular, dan mudah dikembangkan.
+Enkapsulasi membantu menjaga keamanan data atribut.
+Konsep OOP sangat membantu dalam pembuatan aplikasi skala besar seperti sistem POS pertanian.
+
+---
+
+## Quiz
+Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?
+Jawaban: Agar data tidak bisa diakses atau diubah secara langsung dari luar class, sehingga menjaga integritas dan keamanan data.
+
+2. Apa fungsi getter dan setter dalam enkapsulasi?
+Jawaban: Getter digunakan untuk mengambil nilai atribut, sedangkan setter digunakan untuk mengubah nilainya secara terkendali.
+
+3. Bagaimana cara class Produk mendukung pengembangan aplikasi POS yang lebih kompleks?
+Jawaban: Class Produk dapat menjadi dasar bagi fitur lain seperti transaksi penjualan, manajemen stok, dan laporan keuangan, karena sudah memiliki struktur dan perilaku dasar produk pertanian.
