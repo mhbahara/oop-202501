@@ -65,7 +65,7 @@ public class MainInheritance {
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
+(Sertakagn screenshot hasil eksekusi program.  
 ![Screenshot hasil week3_iheritance](screenshots/ss-week3-oop.png)
 )
 ---
