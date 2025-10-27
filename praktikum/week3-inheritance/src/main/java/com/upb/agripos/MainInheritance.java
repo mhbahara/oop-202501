@@ -15,6 +15,6 @@ public class MainInheritance {
         p.deskripsi();
         a.deskripsi();
 
-        CreditBy.print("Bunga Maura Auya", "240320562");
+        CreditBy.print("Bunga Maura Aulya", "240320562");
     }
 }
