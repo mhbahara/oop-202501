@@ -168,7 +168,7 @@ public class MainInheritance {
 ---
 
 ## Hasil Eksekusi
-
+![Screenshot hasil](screenshots/Hasil MainIheritance.png)
 
 ---
 

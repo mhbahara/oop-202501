@@ -166,7 +166,7 @@ public class MainProduk {
 ---
 
 ## Hasil Eksekusi
-
+praktikum/week3-inheritance/screenshots/Hasil MainIheritance.png
 ---
 
 ## Analisis

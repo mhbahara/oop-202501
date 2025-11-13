@@ -30,49 +30,25 @@ Topik: "Paradigma dan Setup Proyek"
 5. Mengambil dan menyimpan hasil eksekusi.
 6. Menyusun laporan praktikum.
 
-<<<<<<< HEAD
----
-
-## Kode Program
-
-```java
-=======
-=======
->>>>>>> 75a2a9970cc305e4beccaa59b5a5e94fe715fb40
 ---
 
 ## Kode Program
 ```Java
-<<<<<<< HEAD
-
-=======
->>>>>>> 75a2a9970cc305e4beccaa59b5a5e94fe715fb40
 // Prosedural
 public class Prosedural {
     public static void main(String[] args) {
         greet();
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 75a2a9970cc305e4beccaa59b5a5e94fe715fb40
     public static void greet() {
         System.out.println("Hello World, I am Rafi Kurniawan - 240202878");
     }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 75a2a9970cc305e4beccaa59b5a5e94fe715fb40
 ```Java
 // OOP
 class HelloOOP {
     private String name;
     private String nim;
-<<<<<<< HEAD
-
-=======
->>>>>>> 75a2a9970cc305e4beccaa59b5a5e94fe715fb40
     public HelloOOP(String name, String nim) {
         this.name = name;
         this.nim = nim;
@@ -87,10 +63,7 @@ public class OOP {
         student.greet();
     }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 75a2a9970cc305e4beccaa59b5a5e94fe715fb40
 ```Java
 // Functional
 public class Functional {
@@ -100,15 +73,12 @@ public class Functional {
         greet.run();
     }
 }
-<<<<<<< HEAD
+
 
 ---
 
 ## Hasil Eksekusi
 
----
-
-=======
 
 ---
 
@@ -119,7 +89,7 @@ public class Functional {
 
 ---
 
->>>>>>> 75a2a9970cc305e4beccaa59b5a5e94fe715fb40
+
 ## Analisis
 (
 - Jelaskan bagaimana kode berjalan.  
@@ -176,7 +146,3 @@ Praktikum ini membantu memahami perbedaan antara tiga paradigma pemrograman — 
 5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?
    **Jawaban:** …  
    Paradigma fungsional mengurangi kode berulang karena berfokus pada penggunaan fungsi murni, komposisi fungsi, dan ekspresi deklaratif untuk menggantikan pola kode yang berulang.
-<<<<<<< HEAD
-=======
-
->>>>>>> 75a2a9970cc305e4beccaa59b5a5e94fe715fb40
