@@ -58,7 +58,7 @@ public class Produk {
         System.out.println("-----------------------------");
     }
 }
-
+```
 ```java
 // Benih
 package com.upb.agripos.model;
@@ -81,7 +81,7 @@ public class Benih extends Produk {
         System.out.println("=============================");
     }
 }
-
+```
 ```java
 // Pupuk
 package com.upb.agripos.model;
@@ -104,7 +104,7 @@ public class Pupuk extends Produk {
         System.out.println("=============================");
     }
 }
-
+```
 ```java
 // Alat Pertanian
 package com.upb.agripos.model;
@@ -127,7 +127,7 @@ public class AlatPertanian extends Produk {
         System.out.println("=============================");
     }
 }
-
+```
 ```java
 // CreditBy
 package com.upb.agripos.util;
@@ -141,7 +141,7 @@ public class CreditBy {
         System.out.println("===================================");
     }
 }
-
+```
 ```java
 // MainInheritance
 package com.upb.agripos;
@@ -164,6 +164,7 @@ public class MainInheritance {
         CreditBy.tampilkanCredit();
     }
 }
+```
 
 ---
 

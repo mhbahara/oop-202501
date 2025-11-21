@@ -43,6 +43,7 @@ public class Prosedural {
         System.out.println("Hello World, I am Rafi Kurniawan - 240202878");
     }
 }
+```
 
 ```Java
 // OOP
@@ -63,7 +64,7 @@ public class OOP {
         student.greet();
     }
 }
-
+```
 ```Java
 // Functional
 public class Functional {
@@ -73,13 +74,7 @@ public class Functional {
         greet.run();
     }
 }
-
-
----
-
-## Hasil Eksekusi
-
-
+```
 ---
 
 ## Hasil Eksekusi

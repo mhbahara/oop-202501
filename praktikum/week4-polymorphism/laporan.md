@@ -105,7 +105,7 @@ public class Produk {
         System.out.println("Stok        : " + stok + " unit");
     }
 }
-
+```
 ```java
 // Benih
 package com.upb.agripos.model;
@@ -129,7 +129,7 @@ public class Benih extends Produk {
         System.out.println("Masa Tanam   : " + masaTanam + " hari");
     }
 }
-
+```
 ```java
 // Pupuk
 package com.upb.agripos.model;
@@ -152,7 +152,7 @@ public class Pupuk extends Produk {
         System.out.println("Berat      : " + berat + " kg");
     }
 }
-
+```
 ```java
 // Alat Pertanian
 package com.upb.agripos.model;
@@ -175,7 +175,7 @@ public class AlatPertanian extends Produk {
         System.out.println("Bahan : " + bahan);
     }
 }
-
+```
 ```java
 // CreditBy
 package com.upb.agripos.util;
@@ -200,7 +200,7 @@ public class CreditBy {
         System.out.println("Cicilan per bulan : Rp" + cicilan);
     }
 }
-
+```
  ```java
  // Main Polymorphism
  package com.upb.agripos;
