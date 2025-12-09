@@ -235,21 +235,16 @@ flowchart LR
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
 ![Screenshot hasil](screenshots/activity.png)
-)
-(Sertakan screenshot hasil eksekusi program.  
+
 ![Screenshot hasil](screenshots/class.png)
-)
-(Sertakan screenshot hasil eksekusi program.  
+
 ![Screenshot hasil](screenshots/sequence.png)
-)
-(Sertakan screenshot hasil eksekusi program.  
+
 ![Screenshot hasil](screenshots/usecase0.png)
-)
-(Sertakan screenshot hasil eksekusi program.  
+
 ![Screenshot hasil](screenshots/usecase1.png)
-)
+
 ---
 
 ## Analisis
