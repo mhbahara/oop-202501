@@ -3,21 +3,25 @@ package com.upb.agripos;
 import java.util.ArrayList;
 
 public class ShoppingCart {
+
     private final ArrayList<Product> items = new ArrayList<>();
 
-    public void addProduct(Product p) {
-        items.add(p);
-        System.out.println(p.getName() + " ditambahkan ke keranjang.");
+    public void addProduct(Product product) {
+        items.add(product);
+        System.out.println(product.getName() + " ditambahkan ke keranjang.");
     }
 
-    public void removeProduct(Product p) {
-        items.remove(p);
-        System.out.println(p.getName() + " dihapus dari keranjang.");
+    public void removeProduct(Product product) {
+        if (items.remove(product)) {
+            System.out.println(product.getName() + " dihapus dari keranjang.");
+        }
     }
 
     public double getTotal() {
         double total = 0;
-        for (Product p : items) total += p.getPrice();
+        for (Product p : items) {
+            total += p.getPrice();
+        }
         return total;
     }
 

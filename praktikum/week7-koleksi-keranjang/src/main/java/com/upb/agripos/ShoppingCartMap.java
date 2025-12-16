@@ -4,21 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ShoppingCartMap {
+
     private final Map<Product, Integer> items = new HashMap<>();
 
-    public void addProduct(Product p) {
-        items.put(p, items.getOrDefault(p, 0) + 1);
-        System.out.println(p.getName() + " ditambahkan (qty +1).");
-    }
-
-    public void removeProduct(Product p) {
-        if (!items.containsKey(p)) return;
-
-        int qty = items.get(p);
-        if (qty > 1) items.put(p, qty - 1);
-        else items.remove(p);
-
-        System.out.println(p.getName() + " dikurangi dari keranjang.");
+    public void addProduct(Product product) {
+        items.put(product, items.getOrDefault(product, 0) + 1);
+        System.out.println(product.getName() + " ditambahkan (qty +1).");
     }
 
     public double getTotal() {
