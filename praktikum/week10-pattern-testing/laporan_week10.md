@@ -164,13 +164,16 @@ Dengan menerapkan design pattern Singleton, arsitektur Model–View–Controller
 
 ## Quiz
 1. Mengapa constructor pada Singleton harus bersifat private?
-**Jawaban:** Constructor pada Singleton harus bersifat private agar objek dari class tersebut tidak dapat dibuat secara bebas dari luar class. Dengan demikian, pembuatan instance hanya dapat dilakukan melalui method getInstance(), sehingga jumlah instance tetap satu dan tujuan Singleton dapat tercapai.
+
+    **Jawaban:** Constructor pada Singleton harus bersifat private agar objek dari class tersebut tidak dapat dibuat secara bebas dari luar class. Dengan demikian, pembuatan instance hanya dapat dilakukan melalui method getInstance(), sehingga jumlah instance tetap satu dan tujuan Singleton dapat tercapai.
 
 2. Jelaskan manfaat pemisahan Model, View, dan Controller.
-**Jawaban:** Pemisahan Model, View, dan Controller membuat kode lebih terstruktur dengan membagi tanggung jawab masing-masing komponen. Model menangani data dan logika bisnis, View mengatur tampilan, dan Controller mengelola alur aplikasi. Hal ini memudahkan pemeliharaan, pengembangan, serta pengujian aplikasi.
+
+    **Jawaban:** Pemisahan Model, View, dan Controller membuat kode lebih terstruktur dengan membagi tanggung jawab masing-masing komponen. Model menangani data dan logika bisnis, View mengatur tampilan, dan Controller mengelola alur aplikasi. Hal ini memudahkan pemeliharaan, pengembangan, serta pengujian aplikasi.
 
 3. Apa peran unit testing dalam menjaga kualitas perangkat lunak?
-**Jawaban:** Unit testing berperan untuk memastikan setiap bagian kecil dari program berjalan sesuai dengan yang diharapkan. Dengan adanya unit testing, kesalahan dapat dideteksi lebih awal, mengurangi bug, serta meningkatkan kepercayaan terhadap kualitas dan kestabilan perangkat lunak.
+
+    **Jawaban:** Unit testing berperan untuk memastikan setiap bagian kecil dari program berjalan sesuai dengan yang diharapkan. Dengan adanya unit testing, kesalahan dapat dideteksi lebih awal, mengurangi bug, serta meningkatkan kepercayaan terhadap kualitas dan kestabilan perangkat lunak.
 
 4. Apa risiko jika Singleton tidak diimplementasikan dengan benar?
    **Jawaban:** Jika Singleton tidak diimplementasikan dengan benar, dapat terjadi lebih dari satu instance dalam aplikasi. Hal ini berisiko menimbulkan inkonsistensi data, pemborosan sumber daya, serta perilaku program yang tidak terduga, terutama pada komponen yang seharusnya bersifat global seperti koneksi database.
