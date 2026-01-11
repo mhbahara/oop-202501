@@ -1,0 +1,6 @@
+com\upb\agripos\TestConnection.class
+com\upb\agripos\config\DatabaseConfig.class
+com\upb\agripos\dao\ProductDAO.class
+com\upb\agripos\model\Product.class
+com\upb\agripos\MainDAOTest.class
+com\upb\agripos\dao\ProductDAOImpl.class
