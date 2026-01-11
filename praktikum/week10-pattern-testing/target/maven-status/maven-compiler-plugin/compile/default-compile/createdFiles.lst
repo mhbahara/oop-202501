@@ -1,0 +1,5 @@
+com\upb\agripos\view\ConsoleView.class
+com\upb\agripos\model\Product.class
+com\upb\agripos\config\DatabaseConnection.class
+com\upb\agripos\controller\ProductController.class
+com\upb\agripos\AppMVC.class

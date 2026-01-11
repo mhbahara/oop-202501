@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "praktikum/week10-pattern-testing/src/test/java",
+        "praktikum/week10-pattern-testing/src/main/java/com/upb/agripos"
+    ]
+}
