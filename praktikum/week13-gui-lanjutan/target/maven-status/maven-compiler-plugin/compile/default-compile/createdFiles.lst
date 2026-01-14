@@ -1,0 +1,7 @@
+com\upb\agripos\AppJavaFX.class
+com\upb\agripos\dao\ProductDAO.class
+com\upb\agripos\service\ProductService.class
+com\upb\agripos\dao\ProductDAOImpl.class
+com\upb\agripos\model\Product.class
+com\upb\agripos\controller\ProductController.class
+com\upb\agripos\view\ProductTableView.class
