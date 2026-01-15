@@ -4,5 +4,5 @@
         "lib/**/*.jar",
         "d:\\postgresql-42.7.8.jar"
     ],
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "disabled"
 }
