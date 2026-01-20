@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com\upb\agripos\service\AuthService.class
 com\upb\agripos\service\PaymentService.class
 com\upb\agripos\view\ProductManagementView$1.class
@@ -20,3 +21,40 @@ com\upb\agripos\exception\ValidationException.class
 com\upb\agripos\dao\UserDAO.class
 com\upb\agripos\model\Receipt.class
 com\upb\agripos\model\Transaction.class
+=======
+CashPayment.class
+com\upb\agripos\AppJavaFX.class
+ReportService.class
+TransactionController.class
+Transaction.class
+ProductService.class
+com\upb\agripos\util\SessionManager.class
+FormatUtil.class
+CartService.class
+com\upb\agripos\view\AdminDashboard.class
+com\upb\agripos\exception\AuthenticationException.class
+UserManagementView.class
+TransactionItem.class
+CartItem.class
+com\upb\agripos\service\AuthService.class
+ProductController.class
+com\upb\agripos\view\MainView.class
+com\upb\agripos\controller\LoginController.class
+Payment.class
+PaymentDialog.class
+UserController.class
+TransactionService.class
+InsufficientStockException.class
+Cart.class
+UserService.class
+com\upb\agripos\model\User.class
+com\upb\agripos\view\LoginView.class
+DatabaseException.class
+com\upb\agripos\util\DatabaseConnection.class
+PaymentException.class
+ProductManagementView.class
+TransactionView.class
+com\upb\agripos\exception\ValidationException.class
+EWalletPayment.class
+ReportView.class
+>>>>>>> c6a2d84756afe6ec286e66b35e0c193c781e75d5

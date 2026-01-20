@@ -1,5 +1,6 @@
 package com.upb.agripos.view;
 
+<<<<<<< HEAD
 import com.upb.agripos.controller.LoginController;
 import com.upb.agripos.model.User;
 import com.upb.agripos.util.SessionManager;
@@ -9,6 +10,13 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+=======
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+>>>>>>> c6a2d84756afe6ec286e66b35e0c193c781e75d5
 import javafx.stage.Stage;
 
 public class MainView {
@@ -16,6 +24,7 @@ public class MainView {
     private TabPane tabPane;
     private User currentUser;
     
+<<<<<<< HEAD
     public MainView() {
         this.loginController = new LoginController();
         this.currentUser = SessionManager.getInstance().getCurrentUser();
@@ -108,3 +117,33 @@ public class MainView {
         });
     }
 }
+=======
+    public static void show(Stage primaryStage) throws Exception {
+        BorderPane root = new BorderPane();
+        
+        // Top Bar
+        VBox topBar = new VBox();
+        topBar.setStyle("-fx-background-color: #2c3e50; -fx-padding: 10;");
+        Label titleLabel = new Label("AgriPOS - Main Dashboard");
+        titleLabel.setStyle("-fx-text-fill: white; -fx-font-size: 16;");
+        topBar.getChildren().add(titleLabel);
+        
+        root.setTop(topBar);
+        
+        // Center content
+        VBox content = new VBox();
+        content.setPadding(new Insets(20));
+        content.setSpacing(15);
+        Label welcome = new Label("Welcome to AgriPOS");
+        welcome.setStyle("-fx-font-size: 18; -fx-font-weight: bold;");
+        content.getChildren().add(welcome);
+        
+        root.setCenter(content);
+        
+        Scene scene = new Scene(root, 800, 600);
+        primaryStage.setTitle("AgriPOS - Main");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+}
+>>>>>>> c6a2d84756afe6ec286e66b35e0c193c781e75d5
