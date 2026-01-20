@@ -1,13 +1,16 @@
 package com.upb.agripos.dao;
 
-import com.upb.agripos.model.Product;
-import com.upb.agripos.exception.DatabaseException;
-import com.upb.agripos.util.DatabaseConnection;
-
-import java.math.BigDecimal;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.upb.agripos.exception.DatabaseException;
+import com.upb.agripos.model.Product;
+import com.upb.agripos.util.DatabaseConnection;
 
 /**
  * Bab 11: JDBC Implementation of ProductDAO
@@ -17,7 +20,7 @@ public class JdbcProductDAO implements ProductDAO {
     @Override
     public List<Product> findAll() throws DatabaseException {
         List<Product> products = new ArrayList<>();
-        String sql = "SELECT * FROM products ORDER BY id";
+        String sql = "SELECT * FROM products ORDER BY code";
 
         try (Connection conn = DatabaseConnection.getConnection();
              Statement stmt = conn.createStatement();
