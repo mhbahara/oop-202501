@@ -1,7 +1,7 @@
-Laporan Proyek Kelompok - Agri-POS System
-Bab 15 – Proyek Kelompok (Desain Sistem + Implementasi Terintegrasi + Testing + Dokumentasi)
+#Laporan Proyek Kelompok - Agri-POS System
+##Bab 15 – Proyek Kelompok (Desain Sistem + Implementasi Terintegrasi + Testing + Dokumentasi)
 
-1. Identitas Kelompok
+##1. Identitas Kelompok
 | No | Nama Lengkap | NIM | Peran |
 | 1 | Rafi Kurniawan | 240202878 | Database Administrator & Testing |
 | 2 | Fakhri Ramadhan | 240202897 | UI/UX Designer & Frontend Developer |
@@ -10,11 +10,11 @@ Bab 15 – Proyek Kelompok (Desain Sistem + Implementasi Terintegrasi + Testing 
 | 5 | Salma Zaidah | 240202884 | Quality Assurance & Integration |
 
 
-1. Ringkasan Sistem
-2.1 Tema Proyek
+##1. Ringkasan Sistem
+##2.1 Tema Proyek
 Agri-POS (Agricultural Point of Sale System) adalah sistem kasir terintegrasi yang dirancang khusus untuk toko pertanian. Sistem ini memfasilitasi manajemen produk, transaksi penjualan, pembayaran multi-metode, serta pelaporan untuk meningkatkan efisiensi operasional.
 
-2.2 Fitur Utama
+##2.2 Fitur Utama
 Manajemen Produk: CRUD produk pertanian dengan kategori, harga, dan stok
 
 Transaksi Penjualan: Keranjang belanja dinamis dengan perhitungan otomatis
@@ -25,7 +25,7 @@ Struk & Laporan: Generate struk transaksi dan laporan penjualan
 
 Role-Based Access: Login untuk Kasir dan Admin dengan hak akses berbeda
 
-2.3 Scope & Batasan
+##2.3 Scope & Batasan
 In Scope:
 
 CRUD Produk dengan validasi stok
@@ -48,9 +48,9 @@ Multi-branch management
 
 Real-time inventory tracking
 
-3. Desain Sistem
-3.1 Software Requirements Specification (SRS)
-3.1.1 Functional Requirements (FR)
+##3. Desain Sistem
+##3.1 Software Requirements Specification (SRS)
+##3.1.1 Functional Requirements (FR)
 ID	Requirement	Priority	Status
 FR-1	Manajemen Produk (CRUD)	High	✅ Implemented
 FR-2	Transaksi Penjualan	High	✅ Implemented
@@ -132,15 +132,15 @@ Role Admin: akses manajemen produk dan laporan
 
 Session management untuk keamanan
 
-3.1.2 Non-Functional Requirements (NFR)
+##3.1.2 Non-Functional Requirements (NFR)
 ID	Requirement	Description
 NFR-1	Usability	UI intuitif dengan waktu pembelajaran < 30 menit
 NFR-2	Performance	Response time < 2 detik untuk transaksi normal
 NFR-3	Reliability	Uptime 99% dengan error handling yang baik
 NFR-4	Maintainability	Kode mengikuti SOLID principles dan DIP
 NFR-5	Security	Password ter-hash, SQL injection prevention
-3.2 Arsitektur Sistem
-3.2.1 Layer Architecture (DIP - Dependency Inversion Principle)
+##3.2 Arsitektur Sistem
+##3.2.1 Layer Architecture (DIP - Dependency Inversion Principle)
 text
 ┌─────────────────────────────────────────────────┐
 │              PRESENTATION LAYER                  │
@@ -182,7 +182,7 @@ text
 │  - transaction_items, payments                  │
 └─────────────────────────────────────────────────┘
 
-3.2.2 Package Structure
+##3.2.2 Package Structure
 ```text
 praktikum/week15-proyek-kelompok/
 ├── src/
@@ -270,7 +270,7 @@ praktikum/week15-proyek-kelompok/
 ├── laporan.md
 └── README.md
 ```
-3.2.3 Dependency Rules (SOLID + DIP)
+##3.2.3 Dependency Rules (SOLID + DIP)
 Single Responsibility Principle (SRP)
 
 Setiap class memiliki satu tanggung jawab
@@ -301,8 +301,8 @@ Service → DAO Interface (bukan concrete)
 
 Tidak ada SQL query di layer GUI/Controller
 
-4. UML Diagram
-4.1 Use Case Diagram
+#4. UML Diagram
+##4.1 Use Case Diagram
 ![Screenshot UML](uml/UseCase1.png)
 ![Screenshot UML](uml/UseCase2.png)
 Keterangan:
@@ -317,7 +317,7 @@ Relationship: <<include>> untuk validasi, <<extend>> untuk optional flows
 
 File diagram: docs/diagrams/usecase_diagram.png atau .drawio
 
-4.2 Class Diagram
+##4.2 Class Diagram
 ![Screenshot UML](uml/Class.png)
 
 Keterangan Class Diagram:
@@ -374,8 +374,8 @@ AuthController: handleLogin(), handleLogout()
 
 File diagram: docs/diagrams/class_diagram.png
 
-4.3 Sequence Diagram
-4.3.1 Sequence Diagram: Tambah Produk
+#4.3 Sequence Diagram
+##4.3.1 Sequence Diagram: Tambah Produk
 ![Screenshot UML](uml/Sequence.png)
 
 Alur:
@@ -410,7 +410,7 @@ ProductController → ProductView: show error message
 
 File diagram: docs/diagrams/seq_add_product.png
 
-4.3.2 Sequence Diagram: Checkout Transaksi
+##4.3.2 Sequence Diagram: Checkout Transaksi
 ![Screenshot UML](uml/Sequence.png)
 
 Alur:
@@ -487,7 +487,7 @@ File diagram: docs/diagrams/seq_checkout.png
 
 ---
 
-5.2 Database Schema (DDL)
+##5.2 Database Schema (DDL)
 File SQL: database/schema.sql
 
 ```sql
@@ -562,7 +562,7 @@ INSERT INTO products (code, name, category, price, stock) VALUES
 ```
 ---
 
-5.4 Database Access via DAO
+##5.4 Database Access via DAO
 Contoh implementasi ProductDAO:
 
 File: src/main/java/com/upb/agripos/dao/impl/ProductDAOImpl.java
@@ -740,8 +740,8 @@ Handle SQLException dengan custom exception
 
 Connection management via Singleton DBUtil
 
-1. Test Plan & Test Case
-6.1 Testing Strategy
+#6. Test Plan & Test Case
+##6.1 Testing Strategy
 Level Testing:
 
 Unit Testing: Test business logic di Service layer (non-UI)
@@ -766,7 +766,7 @@ DAO Layer: 70%
 
 Critical business logic: 100%
 
-6.2 Test Cases (Manual)
+##6.2 Test Cases (Manual)
 TC-001: Login sebagai Admin
 
 Field	Value
