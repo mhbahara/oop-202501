@@ -1,13 +1,18 @@
-#Laporan Proyek Kelompok - Agri-POS System
-##Bab 15 – Proyek Kelompok (Desain Sistem + Implementasi Terintegrasi + Testing + Dokumentasi)
+# Laporan Proyek Kelompok - Agri-POS System
+## Bab 15 – Proyek Kelompok (Desain Sistem + Implementasi Terintegrasi + Testing + Dokumentasi)
+
 ---
-##1. Identitas Kelompok
-| No | Nama Lengkap | NIM | Peran |
+
+## 1. Identitas Kelompok
+
+| No | Nama | NIM | Peran |
+|---|---|---|---|
 | 1 | Rafi Kurniawan | 240202878 | Database Administrator & Testing |
 | 2 | Fakhri Ramadhan | 240202897 | UI/UX Designer & Frontend Developer |
 | 3 | M. Rizky Gilang R | 240202903 | Project Manager & Backend Developer |
 | 4 | Nurdini Handayani | 240202876 | System Analyst & Documentation |
-| 5 | Salma Zaidah | 240202884 | Quality Assurance & Integration |
+| 4 | Salma Zaidah | 240202884 | Quality Assurance & Integration |
+
 ---
 
 ##1. Ringkasan Sistem
