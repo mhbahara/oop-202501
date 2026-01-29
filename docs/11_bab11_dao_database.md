@@ -53,7 +53,6 @@ CREATE TABLE products (
     stock INT
 );
 ```
-
 ---
 
 ### 2. Class Model – Product

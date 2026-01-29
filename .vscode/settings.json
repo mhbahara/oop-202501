@@ -1,0 +1,8 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\postgresql-42.7.8.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "disabled"
+}
